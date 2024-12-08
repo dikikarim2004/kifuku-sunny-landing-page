@@ -1,9 +1,10 @@
 import { PhoneMockup } from "@/components/PhoneMockup";
 import { DownloadButton } from "@/components/DownloadButton";
+//import backgroundImagex from "@/../public/og-image.png";
 
 const Index = () => {
   return (
-    <div className="min-h-screen relative bg-gradient-to-br from-morning-peach via-morning-blue to-morning-gold">
+    <div className="min-h-screen relative bg-gradient-to-br from-morning-peach via-morning-blue to-morning-gold">    
       <div className="absolute inset-0 bg-white/30 backdrop-blur-[50px]" />
       
       <main className="relative container mx-auto px-6 py-12 min-h-screen flex flex-col items-center justify-center">
@@ -13,7 +14,7 @@ const Index = () => {
             Kifuku
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-            Experience the freshness of a Japanese morning with our Telegram mini app
+            Experience the freshness of meme coin Telegram mini app
           </p>
         </div>
 
