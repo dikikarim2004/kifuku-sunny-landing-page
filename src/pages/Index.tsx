@@ -4,8 +4,40 @@ import { DownloadButton } from "@/components/DownloadButton";
 
 const Index = () => {
   return (
-    <div className="min-h-screen relative bg-gradient-to-br from-morning-peach via-morning-blue to-morning-gold">    
-      <div className="absolute inset-0 bg-white/30 backdrop-blur-[50px]" />
+    <div className="min-h-screen relative
+">
+      
+<div
+ 
+className="absolute
+ 
+inset-0
+ 
+bg-white/30
+ 
+backdrop-blur-[50px]"
+ 
+/>
+      
+{/*
+ 
+Background
+ 
+image
+ 
+with
+ 
+overlay
+ 
+*/}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ 
+          backgroundImage: 'url("/sunrise-beach.jpg")',
+        }} 
+      />
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-morning-peach/80 via-morning-blue/70 to-morning-gold/80 backdrop-blur-[0px]" />
       
       <main className="relative container mx-auto px-6 py-12 min-h-screen flex flex-col items-center justify-center">
         {/* Header */}
