@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 interface PhoneMockupProps {
-  platform: "android" | "ios";
+  platform: "andro1" | "andro2" | "andro3" | "andro4" | "andro5" | "ios";
   className?: string;
 }
 

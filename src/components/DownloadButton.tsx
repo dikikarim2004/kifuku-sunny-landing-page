@@ -2,12 +2,11 @@ import { cn } from "@/lib/utils";
 import { Download } from "lucide-react";
 
 interface DownloadButtonProps {
-  platform: "Android" | "iOS";
   href: string;
   className?: string;
 }
 
-export const DownloadButton = ({ platform, href, className }: DownloadButtonProps) => {
+export const DownloadButton = ({ href, className }: DownloadButtonProps) => {
   return (
     <a
       href={href}
@@ -21,7 +20,7 @@ export const DownloadButton = ({ platform, href, className }: DownloadButtonProp
     >
       <Download className="w-5 h-5 text-gray-900 group-hover:scale-110 transition-transform" />
       <span className="font-medium text-gray-900">
-        Download for {platform}
+        Download MiniApp
       </span>
     </a>
   );

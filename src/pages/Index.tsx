@@ -1,35 +1,17 @@
 import { PhoneMockup } from "@/components/PhoneMockup";
 import { DownloadButton } from "@/components/DownloadButton";
-//import backgroundImagex from "@/../public/og-image.png";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Index = () => {
   return (
-    <div className="min-h-screen relative
-">
-      
-<div
- 
-className="absolute
- 
-inset-0
- 
-bg-white/30
- 
-backdrop-blur-[50px]"
- 
-/>
-      
-{/*
- 
-Background
- 
-image
- 
-with
- 
-overlay
- 
-*/}
+    <div className="min-h-screen relative">
+      {/* Background image with overlay */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ 
@@ -37,7 +19,7 @@ overlay
         }} 
       />
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-morning-peach/80 via-morning-blue/70 to-morning-gold/80 backdrop-blur-[0px]" />
+      <div className="absolute inset-0 bg-gradient-to-br from-morning-peach/80 via-morning-blue/70 to-morning-gold/80 backdrop-blur-[10px]" />
       
       <main className="relative container mx-auto px-6 py-12 min-h-screen flex flex-col items-center justify-center">
         {/* Header */}
@@ -46,31 +28,48 @@ overlay
             Kifuku
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-            Experience the freshness of meme coin Telegram mini app
+            Experience the freshness of a Japanese morning with our Telegram mini app
           </p>
         </div>
 
-        {/* Phones Display */}
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-center justify-center mb-16">
-          <div className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
-            <PhoneMockup platform="android" />
-            <div className="mt-8 flex justify-center">
-              <DownloadButton
-                platform="Android"
-                href="https://t.me/KifukuBot"
-              />
-            </div>
-          </div>
+        {/* Phone Carousel */}
+        <div className="w-full max-w-md mx-auto mb-8">
+          <Carousel className="relative w-full">
+            <CarouselContent className="flex items-center justify-center h-[600px]">
+              <CarouselItem className="flex items-center justify-center h-full">
+                <div className="animate-slide-up h-full flex items-center" style={{ animationDelay: "0.2s" }}>
+                  <PhoneMockup platform="andro1" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="flex items-center justify-center h-full">
+                <div className="animate-slide-up h-full flex items-center" style={{ animationDelay: "0.3s" }}>
+                  <PhoneMockup platform="andro2" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="flex items-center justify-center h-full">
+                <div className="animate-slide-up h-full flex items-center" style={{ animationDelay: "0.4s" }}>
+                  <PhoneMockup platform="andro3" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="flex items-center justify-center h-full">
+                <div className="animate-slide-up h-full flex items-center" style={{ animationDelay: "0.5s" }}>
+                  <PhoneMockup platform="andro4" />
+                </div>
+              </CarouselItem>
+              <CarouselItem className="flex items-center justify-center h-full">
+                <div className="animate-slide-up h-full flex items-center" style={{ animationDelay: "0.6s" }}>
+                  <PhoneMockup platform="andro5" />
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious className="left-0" />
+            <CarouselNext className="right-0" />
+          </Carousel>
+        </div>
 
-          <div className="animate-slide-up" style={{ animationDelay: "0.4s" }}>
-            <PhoneMockup platform="ios" />
-            <div className="mt-8 flex justify-center">
-              <DownloadButton
-                platform="iOS"
-                href="https://t.me/KifukuBot"
-              />
-            </div>
-          </div>
+        {/* Download Button */}
+        <div className="mb-16 animate-slide-up">
+          <DownloadButton href="https://t.me/KifukuBot" />
         </div>
 
         {/* Footer */}
