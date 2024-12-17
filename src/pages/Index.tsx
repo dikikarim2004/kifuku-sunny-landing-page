@@ -69,7 +69,14 @@ const Index = () => {
 
         {/* Download Button */}
         <div className="mb-16 animate-slide-up">
-          <DownloadButton href="https://t.me/KifukuBot" />
+          <p className="font-serif italic text-2xl text-kifuku-primary/80 animate-float" 
+             style={{ 
+               textShadow: '0 2px 4px rgba(0,0,0,0.1)',
+               letterSpacing: '0.05em'
+             }}>
+            Coming Soon
+          </p>
+          
         </div>
 
         {/* Footer */}
