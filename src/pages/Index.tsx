@@ -28,7 +28,7 @@ const Index = () => {
             Kifuku
           </h1>
           <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-            Experience the freshness of a Japanese morning with our Telegram mini app
+          Build, Bond, and Trade Your Memecoins Directly on Telegram—Join Kifuku and Fuel Your On-Chain Economy!
           </p>
         </div>
 
