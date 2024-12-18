@@ -18,15 +18,17 @@ const Index = () => {
           backgroundImage: 'url("/sunrise-beach.jpg")',
         }} 
       />
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-morning-peach/80 via-morning-blue/70 to-morning-gold/80 backdrop-blur-[10px]" />
+      {/* Gradient overlay with dominant blue tint */}
+      <div className="absolute inset-0 bg-gradient-to-br from-morning-peach/40 via-morning-blue/10 to-morning-gold/40 backdrop-blur-[2px]" />
       
       <main className="relative container mx-auto px-6 py-12 min-h-screen flex flex-col items-center justify-center">
         {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-4">
-            Kifuku
-          </h1>
+        <img 
+            src="/kifuku1.png" 
+            alt=""
+            className="h-24 md:h-32 mx-auto mb-4"
+          />
           <p className="text-xl text-gray-700 max-w-2xl mx-auto">
           Build, Bond, and Trade Your Memecoins Directly on Telegram—Join Kifuku and Fuel Your On-Chain Economy!
           </p>
