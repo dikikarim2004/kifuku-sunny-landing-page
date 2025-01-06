@@ -1,5 +1,6 @@
 import { PhoneMockup } from "@/components/PhoneMockup";
 import { DownloadButton } from "@/components/DownloadButton";
+import { Twitter } from "lucide-react";
 import {
   Carousel,
   CarouselContent,
@@ -78,6 +79,15 @@ const Index = () => {
              }}>
             Coming Soon
           </p>
+          <a 
+            href="https://x.com/kifuku_official" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-[#3b76a6] hover:text-[#1DA1F2] transition-colors mt-2"
+          >
+            <Twitter size={20} />
+            <span>Follow us on Twitter</span>
+          </a>
           
         </div>
 
